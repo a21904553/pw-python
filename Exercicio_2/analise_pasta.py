@@ -9,8 +9,9 @@ def pede_pasta():
     verificacao = True
     while verificacao:
         print("insira o caminho para a pasta pretendida")
-        if os.path.isdir(input):
-            return input()
+        pasta = input()
+        if os.path.isdir(pasta):
+            return pasta
 
 def faz_calculos(caminho):
     dic_info = {}
